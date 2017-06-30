@@ -84,7 +84,8 @@ FFmpeg中的画面裁剪和旋转操作：
 
   以下是封装好的FFmpeg工具类拼接命令参数并执行：
   
-   ```char *cmd[10];
+```
+   char *cmd[10];
    cmd[0] = "ffmpeg";
    cmd[1] = "-i";
    cmd[2] = new_in_filename_v;
@@ -95,7 +96,8 @@ FFmpeg中的画面裁剪和旋转操作：
    cmd[7] = "-c:a";
    cmd[8] = "copy";
    cmd[9] = new_out_filename;
-   return ffmpeg_cmd_run(10,cmd);```
+   return ffmpeg_cmd_run(10,cmd);
+```
    
 #### 使用Camera+FFmpeg方式录制的优缺点：
 
@@ -113,7 +115,8 @@ FFmpeg中的画面裁剪和旋转操作：
    
 #### FFmpeg常用命令：
 
-   ```-vf 	    可以添加滤镜，特别强大，可以旋转缩放剪切等等
+```
+   -vf 	    可以添加滤镜，特别强大，可以旋转缩放剪切等等
    Transpose    逆时针旋转90°然后垂直翻转1:顺时针旋转90°，2:逆时针旋转90°，3:顺时针旋转90°然后水平翻转
    Crop	        剪切，其有四个参数，分别是宽度、高度、起始剪切位置的X值与Y值
    -vcodec 	指定视频编解码器；
@@ -129,11 +132,13 @@ FFmpeg中的画面裁剪和旋转操作：
    -f          输出格式;
    -s          设置帧大小。格式为 ‘wxh’;
    -ss         指定开始时间;
-   -vframes    指定多少帧;```
+   -vframes    指定多少帧;
+```
    
  以下是一段Java使用FFmpeg命令压缩视频的示例：
  
-  ```String vbr = " -vbr 4 ";
+ ```
+  String vbr = " -vbr 4 ";
   if (compressConfig != null && compressConfig.getMode()==BaseMediaBitrateConfig.MODE.CBR) {
       vbr = "";
   }
@@ -142,6 +147,7 @@ FFmpeg中的画面裁剪和旋转操作：
   getBitrateModeCommand(compressConfig,"",false),
   getBitrateCrfSize(compressConfig, "-crf 28", false),
   getBitrateVelocity(compressConfig, "-preset:v veryfast", false), vbr,mMediaObject.getOutputTempTranscodingVideoPath());
-  boolean transcodingFlag = UtilityAdapter.FFmpegRun("", cmd_transcoding) == 0;```
+  boolean transcodingFlag = UtilityAdapter.FFmpegRun("", cmd_transcoding) == 0;
+```
   
   上面的代码指定了视频编解码器为libx264，音频编解码器为libfdkaac，配置好转码速率，结束后我们就得到了压缩好的视频了。
