@@ -1,4 +1,4 @@
-#iOS视频录制
+#iOS视频录制.
 ![some](https://github.com/suifengqjn/demoimages/blob/master/视频录制/1.png?raw=true)
 
 ##UIImagePickerController
