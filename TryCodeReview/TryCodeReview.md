@@ -6,27 +6,31 @@ ICode使用方法：
 
 ### 一、eclips插件方法发起Review
 
-1、[登陆codereview平台](http://newcoder.58corp.com)，登陆sso生成review账号 。评委们也要登陆，否则没有账号收不到review邮件。
-2、点击右侧账号图标，点击设置，选择“组”，点join。
-3、修改本地eclips插件配置
+1. [登陆codereview平台](http://newcoder.58corp.com)，登陆sso生成review账号 。评委们也要登陆，否则没有账号收不到review邮件。
+
+2. 点击右侧账号图标，点击设置，选择“组”，点join。
+3. 修改本地eclips插件配置
       server ：       http://newcoder.58corp.com 
       User name :  oa账号（比如 luting01）
       password：  aaa123 （所有人都一样，都用这个密码）
-4、发起review，剩下的就和原来一样啦
+4. 发起review，剩下的就和原来一样啦
 
 ### 二、用rbtools命令行方式发起review  
- 
-1、[登陆codereview平台](ttp://newcoder.58corp.com)，登陆sso生成review账号 。评委们也要登陆，否则没有账号收不到review邮件。
-2、安装rbtools  请参考：https://www.reviewboard.org/downloads/rbtools/#linux 
-3、 rbt post  -p -d --target-groups testgroup --summary test --description test --target-people admin
+
+1. [登陆codereview平台](ttp://newcoder.58corp.com)，登陆sso生成review账号 。评委们也要登陆，否则没有账号收不到review邮件。
+
+2. 安装rbtools  请参考：https://www.reviewboard.org/downloads/rbtools/#linux 
+
+3. rbt post  -p -d --target-groups testgroup --summary test --description test --target-people admin
+
 具体使用：  http://ishare.58corp.com/index.php/topic/show/783
 命令行问题请联系renhongwei
 
 ### 三、平台界面发起review
 
-1、[登陆codereview平台](http://newcoder.58corp.com )，登陆sso生成review账号 。
-2、点击 新建审查
-3、选择或上传patch，发起审查
+1. [登陆codereview平台](http://newcoder.58corp.com )，登陆sso生成review账号 。
+2. 点击 新建审查
+3. 选择或上传patch，发起审查
 
 *问题：[ICode中的CodeReview](http://icode.58corp.com)的使用目前只支持SVN，并且每次提交Review操作较为复杂，这有点限制我们的使用。*
 
