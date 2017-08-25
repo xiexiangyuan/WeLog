@@ -16,7 +16,7 @@ ICode使用方法：
 
 ### 二、用rbtools命令行方式发起review  
  
-1、登陆codereview平台，登陆sso生成review账号 。http://newcoder.58corp.com，评委们也要登陆，否则没有账号收不到review邮件。
+1、[登陆codereview平台](ttp://newcoder.58corp.com)，登陆sso生成review账号 。评委们也要登陆，否则没有账号收不到review邮件。
 2、安装rbtools  请参考：https://www.reviewboard.org/downloads/rbtools/#linux 
 3、 rbt post  -p -d --target-groups testgroup --summary test --description test --target-people admin
 具体使用：  http://ishare.58corp.com/index.php/topic/show/783
@@ -24,7 +24,7 @@ ICode使用方法：
 
 ### 三、平台界面发起review
 
-1、登陆codereview平台，登陆sso生成review账号 。http://newcoder.58corp.com 
+1、[登陆codereview平台](http://newcoder.58corp.com )，登陆sso生成review账号 。
 2、点击 新建审查
 3、选择或上传patch，发起审查
 
