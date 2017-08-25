@@ -6,7 +6,7 @@ ICode使用方法：
 
 ### 一、eclips插件方法发起Review
 
-1、登陆codereview平台，登陆sso生成review账号 。http://newcoder.58corp.com （评委们也要登陆，否则没有账号收不到review邮件）
+1、[登陆codereview平台](http://newcoder.58corp.com)，登陆sso生成review账号 。评委们也要登陆，否则没有账号收不到review邮件。
 2、点击右侧账号图标，点击设置，选择“组”，点join。
 3、修改本地eclips插件配置
       server ：       http://newcoder.58corp.com 
